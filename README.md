@@ -21,6 +21,22 @@ splinter
 
 phantomjs
 
+##Examples
+
+        采集域名为百度的信息并显示详细信息,利用的搜索引擎不设置时是使用全部
+        root@kali:/search_url/test# python ex_url.py -d site:baidu.com -v
+
+        利用百度搜索采集链接中带test.ph?id关键词额URL并显示详细信息
+        root@kali:/search_url/test# python ex_url.py -d inurl:test.php?id -e baidu -
+
+        利用百度搜索引擎采集搜索关键词为site:xxx.com.cn+inurl:orderby的URL,采取的数量为30条，并显示信息信息
+        root@kali:/search_url/test# python ex_url.py -d site:xxx.com.cn+inurl:orderby -e baidu -n 30 -v
+
+        把采集的URL链接信息存在test.txt文件中
+        root@kali:/search_url/test# python ex_url.py -d site:xxx.com.cn+inurl:orderby -e yahoo -n 30 -v -o test.txt
+
+
+
 ##Usage
     usage: ex_url.py [-h] -d COMMAND [-e ENGINE] [-v [VERBOSE]] [-n NUMBER] [-o OUTPUT]
     
