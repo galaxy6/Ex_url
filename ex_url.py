@@ -113,14 +113,14 @@ class enumratorBase(object):
 
     def get_response(self,response):
         if hasattr(response, "text"):
-	        return response.text
+	     return response.text
         else:
-            return response.content
+             return response.content
 
-	def end_while(self,resp):
-		""" child class should end the application """
-		return
-			
+    def end_while(self,resp):
+	""" child class should end the application """
+	return
+	
 	#Override
     def extract_commands(self, resp):
         """ chlid class should override this function """
