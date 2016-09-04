@@ -10,7 +10,8 @@ Ex_url/1.0-dev -  automatic extract url tool using Search Engines
 ##Introduce
 1.系统环境kail,脚本环境python2.x
 
-2.利用sublist3r的框架修改后做成的url采集工具，可对Baidu，Bing，Yahoo，Ask, Google,由于Google被屏蔽，用的反向代理，效果不是特别好。
+2.利用sublist3r的框架修改后做成的url采集工具，可利用Baidu，Bing，Yahoo，Ask,
+Google,等搜索引擎利用谷歌高级搜索语法进行采集。由于Google被屏蔽，用的反向代理，效果不是特别好。
 
 
 ##Installation
